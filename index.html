@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Earl Jhon Q. Pascua | Computer Engineering Portfolio</title>
+<meta name="description" content="Portfolio of Earl Jhon Q. Pascua, BS Computer Engineering student at Mapúa University.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap">
+<style>
+:root{--bg:#f8f7f4;--bg2:#ebe8e2;--card:#fff;--tx:#141414;--mu:#55524d;--ac:#d93a26;--gd:#d93a26;--bd:#d8d4cb}
+.dk{--bg:#141414;--bg2:#1c1c1c;--card:#1f1f1f;--tx:#f1efea;--mu:#b3afa6;--ac:#ff6b57;--gd:#ff6b57;--bd:#333}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;font:17px/1.7 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;background:var(--bg);color:var(--tx)}
+img{max-width:100%;display:block}a{color:var(--gd)}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+section{padding:80px 0;background:var(--bg);color:var(--tx)}section.g{background:var(--bg2)}
+h2{font-size:clamp(1.9rem,5vw,3rem);font-weight:800;text-transform:uppercase;letter-spacing:-.02em;line-height:1.05;margin:0 0 10px;display:flex;justify-content:space-between;align-items:flex-start;gap:16px}
+h2::after{content:attr(data-n);font:600 .9rem ui-monospace,Menlo,Consolas,monospace;letter-spacing:0;color:var(--ac)}
+h3{margin:0 0 8px}.lead{color:var(--mu);max-width:720px}
+.grid{display:grid;gap:22px;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));margin-top:30px}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:16px;overflow:hidden}
+.card .b{padding:20px}.card img{width:100%;height:230px;object-fit:cover;object-position:top}
+.card p{color:var(--mu);margin:0 0 12px;font-size:.97rem}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 0;padding:0;list-style:none}
+.chips li{background:var(--bg);border:1px solid var(--bd);border-radius:999px;padding:3px 12px;font-size:.85rem}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:34px;margin-top:30px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin-top:26px}
+.stat{background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:16px;text-align:center}
+.stat b{display:block;font-size:1.6rem;color:var(--gd)}.stat span{font-size:.88rem;color:var(--mu)}
+.feat{padding-left:20px}.feat li{margin-bottom:8px}
+.gal{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:20px}
+figure{margin:0}figure img{border-radius:12px;width:100%;height:210px;object-fit:cover;border:1px solid var(--bd)}
+figcaption{font-size:.88rem;color:var(--mu);margin-top:6px}
+.tl{border-left:3px solid var(--ac);margin:26px 0 0 8px;padding-left:24px}
+.tl div{position:relative;margin-bottom:22px}.tl div::before{content:"";position:absolute;left:-33px;top:7px;width:14px;height:14px;border-radius:50%;background:var(--gd);border:3px solid var(--bg)}
+.tl h4{margin:0 0 4px}.tl p{margin:0;color:var(--mu)}
+.jg{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));margin-top:26px}
+.jg img{height:260px;object-fit:cover;width:100%;border-radius:12px;border:1px solid var(--bd)}
+blockquote{margin:26px 0 0;padding:18px 22px;background:var(--card);border-left:4px solid var(--gd);border-radius:0 12px 12px 0;color:var(--mu)}
+.ct{display:grid;gap:14px;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));margin-top:28px}
+.ct a{display:block;background:var(--card);border:1px solid var(--bd);border-radius:12px;padding:16px 18px;color:var(--tx);text-decoration:none;word-break:break-word}
+.ct a:hover{border-color:var(--ac)}.ct small{display:block;color:var(--mu)}
+.pj{display:grid;gap:26px;grid-template-columns:repeat(2,1fr);margin:34px 0 10px}
+.pc{display:block;text-decoration:none;color:var(--tx)}
+.pc .im{position:relative;border-radius:28px;overflow:hidden;border:1px solid var(--bd);aspect-ratio:16/11;background:var(--card)}
+.pc img{width:100%;height:100%;object-fit:cover;transition:transform .5s}.pc:hover img{transform:scale(1.04)}
+.pc .n{position:absolute;top:16px;left:16px;z-index:1;background:rgba(10,14,25,.78);color:#fff;font:700 .8rem ui-monospace,Menlo,Consolas,monospace;padding:5px 11px;border-radius:999px}
+.pc .meta{display:flex;justify-content:space-between;align-items:flex-start;gap:12px;padding:16px 4px 0}
+.pc h4{margin:0;font-size:1.5rem;line-height:1.2}.pc small{display:block;margin-top:4px;color:var(--mu);font:.82rem ui-monospace,Menlo,Consolas,monospace}
+.pc .loc{color:var(--mu);font:.78rem ui-monospace,Menlo,Consolas,monospace;letter-spacing:.12em;white-space:nowrap;padding-top:6px}
+dialog{border:0;background:transparent;max-width:94vw;max-height:94vh;padding:0}dialog::backdrop{background:rgba(0,0,0,.88)}
+dialog img{max-width:94vw;max-height:88vh;border-radius:12px;margin:auto}dialog button{display:block;margin:0 0 10px auto;background:var(--ac);color:#fff;border:0;border-radius:8px;padding:8px 16px;font-size:1rem;cursor:pointer}
+@media (max-width:700px){.pj{grid-template-columns:1fr}.pc h4{font-size:1.25rem}}
+section.quote{background:#ebe8e2;color:#141414;padding:110px 20px}
+.qw{max-width:780px;margin:0 auto}
+.qt{font:500 clamp(2rem,5.2vw,3.5rem)/1.18 "Space Grotesk",system-ui,-apple-system,"Segoe UI",sans-serif;letter-spacing:-.01em;margin:0 0 34px}
+.qt em{font-style:normal;color:#d93a26}
+.qs{font-size:1.05rem;line-height:1.7;color:#55524d;max-width:560px;margin:0}
+@media (max-width:820px){section.quote{padding:70px 20px}}
+.bar{position:sticky;top:0;z-index:20;background:#0c0c0c;padding:14px 20px}
+.bi{max-width:1320px;margin:0 auto;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:12px}
+.pill{display:inline-flex;align-items:center;gap:4px;border:1px solid #3a3a3a;border-radius:999px;padding:5px 6px;color:#fff;text-decoration:none;font-weight:700;font-size:.92rem}
+.pill.lg{padding:10px 18px;justify-self:start}.pill.so{justify-self:end}
+.pill a{color:#fff;text-decoration:none;padding:6px 10px;border-radius:999px;font:700 .75rem ui-monospace,Menlo,Consolas,monospace}.pill.so a{padding:6px 14px}.pill.so a:hover{background:#2a2a2a}
+.pill.mid{background:#fff;border-color:#fff;padding:5px}.pill.mid ul{display:flex;gap:0;list-style:none;margin:0;padding:0}
+.pill.mid a{color:#111;font:600 .9rem system-ui,sans-serif;padding:9px 14px;display:block}.pill.mid a:hover,.pill.mid a:focus-visible{background:#e8e6e0}
+#mb{display:none;background:#fff;color:#111;border:0;border-radius:999px;padding:10px 18px;font:700 .9rem system-ui}
+.hero{padding:6px 20px 40px;background:#0c0c0c;color:#f1efea}
+.hg{max-width:1320px;margin:0 auto;display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.sl{position:relative;border-radius:44px;overflow:hidden;min-height:clamp(440px,calc(100vh - 110px),780px);background:#1a1a1a}
+.sl img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .9s}.sl img.on{opacity:1}
+.bd{position:absolute;top:18px;left:18px;z-index:2;background:rgba(10,10,10,.75);color:#fff;font:700 .8rem ui-monospace,Menlo,Consolas,monospace;padding:7px 13px;border-radius:999px}
+.sc{position:absolute;right:18px;bottom:18px;z-index:2;display:flex;gap:8px}
+.sc button{width:44px;height:44px;border-radius:50%;border:0;background:rgba(255,255,255,.9);color:#111;font-size:1.1rem;cursor:pointer}
+.pn{border:1px solid #333;border-radius:44px;padding:clamp(24px,4vw,44px);display:flex;flex-direction:column;min-height:420px}
+.tg{font:700 .78rem ui-monospace,Menlo,Consolas,monospace;letter-spacing:.14em;text-transform:uppercase;color:#b3afa6}.tg b{color:#ff6b57;margin-right:8px}
+.pn h1{color:#fff;font-size:clamp(2.6rem,6.2vw,5.4rem);line-height:1;letter-spacing:-.03em;margin:18px 0 14px;font-weight:800}
+.pn .sub{font-size:clamp(1.3rem,2.6vw,2.3rem);line-height:1.15;font-weight:300;color:#d9d6cf;margin:0}
+.rows{margin-top:auto;padding-top:40px}
+.rows a{display:flex;justify-content:space-between;align-items:center;gap:14px;border-top:1px solid #333;padding:18px 0;color:#fff;text-decoration:none;font-weight:700;font-size:1.15rem}
+.rows a span{background:#fff;color:#111;font-size:.92rem;padding:9px 16px;border-radius:4px}.rows a:hover span{background:#ff6b57;color:#111}
+@media (max-width:900px){.bi{grid-template-columns:auto 1fr}.pill.so{display:none}#mb{display:block;justify-self:end}
+.pill.mid{display:none;position:absolute;top:66px;left:20px;right:20px;border-radius:24px;padding:8px}.pill.mid.open{display:flex}.pill.mid ul{flex-direction:column;width:100%}
+.hg{grid-template-columns:1fr}.sl{min-height:440px;border-radius:32px}.pn{border-radius:32px;min-height:0}}
+@media (prefers-reduced-motion:reduce){.sl img{transition:none}}
+footer{padding:26px 0;text-align:center;color:#b3afa6;background:#141414;font-size:.9rem}
+a:focus-visible,button:focus-visible{outline:3px solid var(--gd);outline-offset:2px}
+@media (max-width:820px){.two{grid-template-columns:1fr}section{padding:56px 0}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+<div class="bar"><div class="bi">
+<a class="pill lg" href="#home">✦ Earl Pascua</a>
+<button id="mb" aria-expanded="false" aria-controls="menu">Menu</button>
+<nav class="pill mid" id="menu" aria-label="Main"><ul>
+<li><a href="#home">Home</a></li><li><a href="#about">About</a></li><li><a href="#coursework">Coursework</a></li>
+<li><a href="#projects">Projects</a></li><li><a href="#journey">Journey</a></li><li><a href="#contact">Contact</a></li>
+</ul></nav>
+<div class="pill so"><a href="https://www.linkedin.com/in/earl-pascua-401ab0443" target="_blank" rel="noopener" aria-label="LinkedIn">LI</a></div>
+</div></div>
+
+<header class="hero dk" id="home"><div class="hg">
+<div class="sl" id="sl" role="group" aria-roledescription="carousel" aria-label="Photos of Earl">
+<span class="bd" id="bd">01 / 03</span>
+<img class="on" src="images/hero-grad.jpg" alt="Earl smiling in a red graduation gown, holding his graduation cap" style="object-position:center 20%">
+<img src="images/hero-fireworks.jpg" alt="Earl in an orange polo on a boat at night with fireworks over the water behind him" style="object-position:center 55%">
+<img src="images/hero-mural.jpg" alt="Earl looking up at a long colorful mural in a grand museum hall" style="object-position:center 60%">
+<div class="sc"><button id="pv" aria-label="Previous photo">←</button><button id="nx" aria-label="Next photo">→</button></div>
+</div>
+<div class="pn">
+<div class="tg"><b>✦</b>BS Computer Engineering — Mapúa University</div>
+<h1>Earl Jhon Q. Pascua</h1>
+<p class="sub">1st Year Computer Engineering student · Intramuros Campus</p>
+<div class="rows">
+<a href="#about">About Me <span>Read ↗</span></a>
+<a href="#projects">Featured Project <span>View ↗</span></a>
+<a href="#contact">Get in Touch <span>Contact ↗</span></a>
+</div></div>
+</div></header>
+
+<section class="quote" aria-label="Tagline and mission"><div class="qw">
+<p class="qt">Make <em>Bank</em> Using CPE MAPUA DEGREE</p>
+<p class="qs">Dedicated to mastering hardware-software integration, embedded systems and automated technology, with a long-term vision to contribute to global smart infrastructure and high-impact engineering environments worldwide.</p>
+</div></section>
+
+<section id="about" class="dk"><div class="wrap">
+<h2 data-n="/01">About Me</h2>
+<p class="lead">Born and raised in Cabanatuan City, now building my future in engineering at Mapúa.</p>
+<div class="two">
+<div>
+<h3>Background &amp; Focus</h3>
+<p>I'm a first-year Computer Engineering student at Mapúa University. I chose this field because of its growing global impact, especially the synergy between hardware architecture and software development.</p>
+<p>My career goals follow international engineering standards. I'm inspired by the demand for versatile computer engineers in global transport and smart facility infrastructure, such as major international airports.</p>
+<h3>Interests &amp; Activities</h3>
+<p>Outside class I go to the gym four to five times a week. I have a keen interest in motorsports, especially Formula Racing, so Mapúa Cardinal One is the organization I'm most drawn to, a way to combine that passion with teamwork and communication skills.</p>
+<h3>Why Mapúa</h3>
+<p>Mapúa is a premier engineering school in the Philippines, known for graduates who compete globally in international technical roles.</p>
+</div>
+<div>
+<h3>Early Engineering Experience</h3>
+<p>My hands-on journey began in senior high school, where I led an Arduino-based automation research project, the <b>Solar-Powered Smart Bell System with Web-Based Automation</b>. It gave me a foundation in microcontrollers, sensor integration, C/C++ logic and wireless web control.</p>
+<div class="stats">
+<div class="stat"><b>Highest Honors</b><span>Senior high school graduate</span></div>
+<div class="stat"><b>Research Lead</b><span>Arduino IoT project</span></div>
+<div class="stat"><b>Cardinal One</b><span>Organization I aim to join (motorsports)</span></div>
+<div class="stat"><b>99/100</b><span>College Trigonometry LQ1</span></div>
+</div></div></div></div></section>
+
+<section id="coursework"><div class="wrap">
+<h2 data-n="/02">Coursework</h2>
+<p class="lead">Courses and outputs that shaped how I understand computer engineering.</p>
+<div class="grid">
+<article class="card"><a href="https://drive.google.com/file/d/1WyiYzTz_PWS0CXm9FfitWdy-B1aw5f02/view?usp=sharing" target="_blank" rel="noopener"><img src="images/infographic.jpg" alt="Dark-themed infographic titled Emerging Technologies, covering AI, IoT, edge computing and robotics"></a>
+<div class="b"><h3>Emerging Technologies in Computer Engineering</h3><p>A technical infographic breaking down AI and machine learning, the Internet of Things, edge computing, and robotics and automation. It built my skills in visual data communication, trend synthesis and turning complex ideas into clear visuals.</p>
+<ul class="chips"><li>CPE124</li><li>Infographic</li></ul><p style="margin-top:12px"><a href="https://drive.google.com/file/d/1WyiYzTz_PWS0CXm9FfitWdy-B1aw5f02/view?usp=sharing" target="_blank" rel="noopener">Open the full infographic ↗</a></p></div></article>
+
+<article class="card"><a href="https://drive.google.com/file/d/1WJpfZN6mbMa8Fei3OQ0HpIuDjvnpT9El/view?usp=sharing" target="_blank" rel="noopener"><img src="images/paper.jpg" alt="First page of the written report The Blueprint for an Engineering Career"></a>
+<div class="b"><h3>The Blueprint for an Engineering Career</h3><p>A reflective report on my move from high school to the demands of college engineering: study methods, daily routines and habits. It sharpened my self-assessment, workflow planning and long-term career thinking.</p>
+<ul class="chips"><li>CPE101</li><li>Written report</li></ul><p style="margin-top:12px"><a href="https://drive.google.com/file/d/1WJpfZN6mbMa8Fei3OQ0HpIuDjvnpT9El/view?usp=sharing" target="_blank" rel="noopener">Read the full paper ↗</a></p></div></article>
+
+<article class="card"><a href="https://drive.google.com/file/d/14cweaz1AKhbC9HSa-DO1w0poN92gVFfZ/view" target="_blank" rel="noopener"><img src="images/video-thumb.jpg" alt="Earl presenting his Edge AI speech on camera against a metallic circuit-like background"></a>
+<div class="b"><h3>Edge Artificial Intelligence</h3><p>A recorded technical speech on Edge AI: how on-device hardware acceleration lets phones run compute-heavy tasks locally, with no cloud or constant internet. It strengthened my public speaking and my understanding of processor architecture.</p>
+<ul class="chips"><li>Speech</li><li>Video</li></ul>
+<p style="margin-top:12px"><a href="https://drive.google.com/file/d/14cweaz1AKhbC9HSa-DO1w0poN92gVFfZ/view" target="_blank" rel="noopener">▶ Watch the speech ↗</a></p></div></article>
+</div></div></section>
+
+<section id="projects" class="dk"><div class="wrap">
+<h2 data-n="/03">Featured Project</h2>
+<h3 style="margin-top:20px">Solar-Powered Smart Bell System Featuring Web-Based Automation</h3>
+<p class="lead">An eco-friendly automated school bell that removes manual ringing errors and delays, using a real-time clock for scheduling and a local web interface for remote setup. Category: embedded systems, IoT and renewable energy prototyping.</p>
+<div class="pj">
+<a class="pc" href="images/bell-prototype.jpg" data-lb><div class="im"><span class="n">01</span><img src="images/bell-prototype.jpg" alt="Arduino Uno bell prototype with push buttons, buzzer, DS3231 clock module, NodeMCU ESP8266 and an LCD display" style="object-position:center" loading="lazy"></div><div class="meta"><div><h4>The Prototype</h4><small>Arduino · ESP8266 · LCD</small></div><span class="loc">HARDWARE</span></div></a>
+<a class="pc" href="images/bell-panel.jpg" data-lb><div class="im"><span class="n">02</span><img src="images/bell-panel.jpg" alt="Web control panel with password-protected bell configuration and system time settings" style="object-position:top" loading="lazy"></div><div class="meta"><div><h4>Smart Bell Control Panel</h4><small>Web Interface · ESP8266 Server</small></div><span class="loc">SOFTWARE</span></div></a>
+<a class="pc" href="images/bell-wiring.jpg" data-lb><div class="im"><span class="n">03</span><img src="images/bell-wiring.jpg" alt="Close-up of breadboard wiring with push buttons and buzzer while code is edited on a laptop" style="object-position:center" loading="lazy"></div><div class="meta"><div><h4>Wiring &amp; Coding</h4><small>Breadboard · Push Buttons · Buzzer</small></div><span class="loc">BUILD</span></div></a>
+<a class="pc" href="images/bell-desk.jpg" data-lb><div class="im"><span class="n">04</span><img src="images/bell-desk.jpg" alt="Complete bell system prototype connected to a laptop and powered by a portable power bank" style="object-position:center" loading="lazy"></div><div class="meta"><div><h4>Development Setup</h4><small>Power Bank · Laptop · Testing</small></div><span class="loc">SETUP</span></div></a>
+<a class="pc" href="images/bell-testing.jpg" data-lb><div class="im"><span class="n">05</span><img src="images/bell-testing.jpg" alt="Earl testing the smart bell prototype beside his laptop" style="object-position:center" loading="lazy"></div><div class="meta"><div><h4>System Testing</h4><small>Live Configuration · Debugging</small></div><span class="loc">TESTING</span></div></a>
+</div>
+<div class="two">
+<div><h3>Key Features</h3><ul class="feat">
+<li><b>Zero-delay synchronization:</b> 0 sec mean delay using a hardware Real-Time Clock.</li>
+<li><b>Local web server:</b> ESP8266 interface to adjust bell schedules, modes and durations wirelessly, with no internet needed.</li>
+<li><b>Precision timekeeping:</b> DS3231 RTC over the I²C protocol.</li>
+<li><b>Status and override:</b> 16×2 LCD readout plus physical push buttons.</li>
+<li><b>Off-grid power:</b> solar collector with a rechargeable battery.</li>
+<li><b>Serial commands:</b> custom parsing such as <code>SET_TIME:HH:MM</code>, <code>SET_MODE:value</code>, <code>SET_DURATION:value</code>.</li></ul></div>
+<div><h3>Tools &amp; Technologies</h3>
+<p><b>Hardware</b></p><ul class="chips"><li>Arduino Uno</li><li>NodeMCU ESP8266</li><li>DS3231 RTC</li><li>16×2 I²C LCD</li><li>Relay / Buzzer</li><li>Solar panel</li><li>Battery</li><li>Push buttons</li></ul>
+<p style="margin-top:16px"><b>Software</b></p><ul class="chips"><li>C/C++</li><li>Arduino IDE</li><li>SoftwareSerial</li><li>ESP8266WiFi</li><li>ESP8266WebServer</li><li>RTClib</li><li>Wire</li><li>HTML + HTTP</li></ul>
+<p style="margin-top:16px"><b>Simulation &amp; analysis</b></p><ul class="chips"><li>Wokwi</li><li>Tinkercad</li><li>Excel (paired t-test, chi-square)</li></ul></div>
+</div>
+<h3 style="margin-top:44px">Research Documentation</h3>
+<div class="pj">
+<a class="pc" href="images/title-defense.jpg" data-lb><div class="im"><span class="n">06</span><img src="images/title-defense.jpg" alt="Title defense slide for the 12-STEM Herschel research project of Dr. Ramon De Santos National High School" style="object-position:center" loading="lazy"></div><div class="meta"><div><h4>Title Defense</h4><small>12-STEM Herschel · Research</small></div><span class="loc">SENIOR HIGH</span></div></a>
+<a class="pc" href="images/chapter1.jpg" data-lb><div class="im"><span class="n">07</span><img src="images/chapter1.jpg" alt="Chapter 1 Introduction pages of the research paper, covering rationale and literature review" style="object-position:top" loading="lazy"></div><div class="meta"><div><h4>Chapter 1 Paper</h4><small>Introduction · Literature Review</small></div><span class="loc">RESEARCH</span></div></a>
+<a class="pc" href="images/final-defense.jpg" data-lb><div class="im"><span class="n">08</span><img src="images/final-defense.jpg" alt="Earl and classmates with the panel of teachers at the final defense in front of a green chalkboard" style="object-position:center" loading="lazy"></div><div class="meta"><div><h4>Final Defense</h4><small>Panel · 12-STEM Herschel</small></div><span class="loc">SENIOR HIGH</span></div></a>
+</div></div></section>
+
+<section id="journey" class="g"><div class="wrap">
+<h2 data-n="/04">Personal Journey</h2>
+<p class="lead">Moving to Mapúa's fast-paced engineering program tested my adaptability. I had gaps in foundational math, so I knew success would depend on my own discipline.</p>
+<div class="jg">
+<img src="images/journey-mapua.jpg" alt="Earl smiling in front of the Mapúa University sign, wearing a Mapúa lanyard">
+<img src="images/journey-desk.jpg" alt="Late-night study desk with a laptop, handwritten chemistry notes and a red Mapúa tumbler">
+<img src="images/journey-rest.jpg" alt="Earl resting with eyes closed, wearing his Mapúa lanyard after a long day">
+<img src="images/journey-chapel.jpg" alt="Quiet chapel interior with a golden statue, flowers and wooden pews">
+</div>
+<h3 style="margin-top:40px">How I Overcame It</h3>
+<div class="tl">
+<div><h4>Daily problem-solving</h4><p>3 to 5 hours every day on problem-solving and breaking down concepts.</p></div>
+<div><h4>Early exam prep</h4><p>Starting 3 to 7 days ahead, so cramming is never the plan.</p></div>
+<div><h4>Real mastery on ALEKS</h4><p>Working through proofs on my own instead of relying on shortcut generators.</p></div>
+<div><h4>Active study techniques</h4><p>Active recall, the blurting method for formulas, and Pomodoro sessions of 30 to 45 minutes, with videos from The Organic Chemistry Tutor and Crash Course when I'm stuck.</p></div>
+<div><h4>Focus &amp; wellness</h4><p>Cutting non-essential gaming and managing stamina with healthier alternatives to caffeine.</p></div>
+</div>
+<div class="gal" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr));align-items:center">
+<img src="images/journey-grade.jpg" alt="Grade screen showing 99 out of 100 on College Trigonometry quiz LQ1" style="border-radius:12px;max-width:320px;border:1px solid var(--bd)">
+<blockquote style="margin:0"><b>Reflection.</b> With structured perseverance I got through Math 165 and 166 and built the confidence for Math 176 and my major CPE subjects. Technical skill is built through consistency, effort and structured problem-solving.</blockquote>
+</div></div></section>
+
+<section id="contact" class="dk"><div class="wrap">
+<h2 data-n="/05">Contact</h2>
+<p class="lead">Open to collaborations, internships and conversations about hardware, software and smart infrastructure.</p>
+<div class="ct">
+<a href="mailto:ejqpascua@mymail.mapua.edu.ph"><small>Institutional email</small>ejqpascua@mymail.mapua.edu.ph</a>
+<a href="mailto:earlpascua3@gmail.com"><small>Personal email</small>earlpascua3@gmail.com</a>
+<a href="tel:+639567307922"><small>Mobile</small>+63 956 730 7922</a>
+<a href="https://www.linkedin.com/in/earl-pascua-401ab0443" target="_blank" rel="noopener"><small>LinkedIn</small>linkedin.com/in/earl-pascua-401ab0443</a>
+</div></div></section>
+
+<footer>© 2026 Earl Jhon Q. Pascua · BS Computer Engineering, Mapúa University</footer>
+<script>
+var b=document.getElementById('mb'),m=document.getElementById('menu');
+b.onclick=function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',o)};
+m.onclick=function(e){if(e.target.tagName==='A'){m.classList.remove('open');b.setAttribute('aria-expanded',false)}};
+var im=document.querySelectorAll('#sl img'),bd=document.getElementById('bd'),k=0,t;
+function go(i){im[k].classList.remove('on');k=(i+im.length)%im.length;im[k].classList.add('on');bd.textContent='0'+(k+1)+' / 0'+im.length}
+function play(){clearInterval(t);if(!matchMedia('(prefers-reduced-motion:reduce)').matches)t=setInterval(function(){go(k+1)},4000)}
+document.getElementById('nx').onclick=function(){go(k+1);play()};document.getElementById('pv').onclick=function(){go(k-1);play()};
+var sl=document.getElementById('sl');sl.onmouseenter=function(){clearInterval(t)};sl.onmouseleave=play;play();
+var d=document.createElement('dialog');d.innerHTML='<button aria-label="Close image">Close ✕</button><img alt="">';document.body.appendChild(d);
+d.querySelector('button').onclick=function(){d.close()};d.onclick=function(e){if(e.target===d)d.close()};
+document.querySelectorAll('[data-lb]').forEach(function(a){a.onclick=function(e){e.preventDefault();var i=d.querySelector('img');i.src=a.getAttribute('href');i.alt=a.querySelector('img').alt;d.showModal()}});
+</script>
+</body>
+</html>
